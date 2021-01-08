@@ -10,10 +10,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class NotVisibleTest {
+public class NotVisibleElementTest {
 
   @Test
-  public void notVisibleTest() throws InterruptedException {
+  public void notVisibleElementTest()  {
 
     //setUp
     System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe/");
@@ -32,7 +32,7 @@ public class NotVisibleTest {
     String expectedMessage = "Hello World!";
     WebElement actualMessage = driver.findElement(By.xpath("//div[@id='finish']"));
 
-    WebDriverWait wait = new WebDriverWait(driver, 5);
+    WebDriverWait wait = new WebDriverWait(driver, 10);
     wait.until(ExpectedConditions.visibilityOf(actualMessage));
     String messageText = actualMessage.getText();
     Assert.assertTrue(messageText.contains(expectedMessage));

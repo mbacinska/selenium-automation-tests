@@ -6,16 +6,19 @@
             <class name="com.selenium.automated.tests.LoginTest" />
         </classes>
     </test>
-
     <test name="NegativeTests">
         <classes>
             <class name="com.selenium.automated.tests.NegativeLoginTest"/>
         </classes>
     </test>
-
     <test name="NotVisibleTests">
         <classes>
-            <class name="com.selenium.automated.tests.NotVisibleTest"/>
+            <class name="com.selenium.automated.tests.NotVisibleElementTest"/>
+        </classes>
+    </test>
+    <test name="NotPresentElementTest">
+        <classes>
+            <class name="com.selenium.automated.tests.NotPresentElementTest"/>
         </classes>
     </test>
 </suite>

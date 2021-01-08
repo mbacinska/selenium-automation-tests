@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 public class LoginTest {
 
   @Test
-  public void loginTest() throws InterruptedException {
+  public void loginTest() {
 
     System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe/");
     WebDriver driver = new ChromeDriver();
@@ -32,7 +32,7 @@ public class LoginTest {
     //verifications
     String expectedUrl = "https://the-internet.herokuapp.com/secure";
     String actualUrl = driver.getCurrentUrl();
-    Assert.assertEquals(actualUrl,expectedUrl,"Actual page url is not the same as expected");
+    Assert.assertEquals(actualUrl, expectedUrl, "Actual page url is not the same as expected");
 
     WebElement logoutButton = driver.findElement(By.xpath("//a[@class='button secondary radius']"));
     Assert.assertTrue(logoutButton.isDisplayed(), "Logout button is not displayed");
