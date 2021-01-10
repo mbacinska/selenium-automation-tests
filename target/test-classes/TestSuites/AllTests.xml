@@ -21,4 +21,9 @@
             <class name="com.selenium.automated.tests.NotPresentElementTest"/>
         </classes>
     </test>
+    <test name="DisabledElementTest">
+        <classes>
+            <class name="com.selenium.automated.tests.DisabledElementTest"/>
+        </classes>
+    </test>
 </suite>
