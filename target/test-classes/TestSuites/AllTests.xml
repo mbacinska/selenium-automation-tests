@@ -26,4 +26,9 @@
             <class name="com.selenium.automated.tests.DisabledElementTest"/>
         </classes>
     </test>
+    <test name="DynamicElementTest">
+        <classes>
+            <class name="com.selenium.automated.tests.DynamicElementTest"/>
+        </classes>
+    </test>
 </suite>
