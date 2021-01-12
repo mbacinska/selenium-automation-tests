@@ -1,5 +1,6 @@
 package com.selenium.automated.tests;
 
+import com.selenium.automated.base.BaseTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -8,14 +9,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class LoginTest {
+public class LoginTest extends BaseTest {
 
   @Test
   public void loginTest() {
-
-    System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe/");
-    WebDriver driver = new ChromeDriver();
-    driver.manage().window().maximize();
 
     //open the page
     String url = "https://the-internet.herokuapp.com/login";
@@ -42,6 +39,5 @@ public class LoginTest {
     String messageText = actualMessage.getText();
     Assert.assertTrue(messageText.contains(expectedMessage));
 
-    driver.quit();
   }
 }

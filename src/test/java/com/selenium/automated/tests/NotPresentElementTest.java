@@ -1,5 +1,6 @@
 package com.selenium.automated.tests;
 
+import com.selenium.automated.base.BaseTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,15 +10,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class NotPresentElementTest {
+public class NotPresentElementTest  extends BaseTest {
 
   @Test
   public void notPresentElementTest() {
-
-    //setUp
-    System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe/");
-    WebDriver driver = new ChromeDriver();
-    driver.manage().window().maximize();
 
     //open the page
     String url = "http://the-internet.herokuapp.com/dynamic_loading/2";
@@ -33,9 +29,6 @@ public class NotPresentElementTest {
     WebElement actualMessage = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("finish")));
     String messageText = actualMessage.getText();
     Assert.assertTrue(messageText.contains(expectedMessage));
-
-    //close browser
-    driver.quit();
 
   }
 }

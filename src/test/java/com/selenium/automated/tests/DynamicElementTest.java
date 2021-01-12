@@ -1,5 +1,6 @@
 package com.selenium.automated.tests;
 
+import com.selenium.automated.base.BaseTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,15 +10,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class DynamicElementTest {
+public class DynamicElementTest extends BaseTest {
 
   @Test
   public void dynamicElementTest() {
-
-    //setUp
-    System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe/");
-    WebDriver driver = new ChromeDriver();
-    driver.manage().window().maximize();
 
     //open the page
     String url = "https://the-internet.herokuapp.com/dynamic_controls";
@@ -39,9 +35,6 @@ public class DynamicElementTest {
     //verifications
     WebElement checkBoxElement2 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkbox")));
     Assert.assertTrue(checkBoxElement2.isDisplayed());
-
-    //close browser
-    driver.quit();
 
   }
 }
