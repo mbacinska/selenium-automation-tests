@@ -36,4 +36,9 @@
             <class name="com.selenium.automated.tests.CheckboxesTest"/>
         </classes>
     </test>
+    <test name="DropdownTest">
+        <classes>
+            <class name="com.selenium.automated.tests.DropdownTest"/>
+        </classes>
+    </test>
 </suite>

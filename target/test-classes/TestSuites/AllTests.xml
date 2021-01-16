@@ -31,4 +31,9 @@
             <class name="com.selenium.automated.tests.DynamicElementTest"/>
         </classes>
     </test>
+    <test name="CheckboxesTest">
+        <classes>
+            <class name="com.selenium.automated.tests.CheckboxesTest"/>
+        </classes>
+    </test>
 </suite>
