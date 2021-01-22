@@ -46,4 +46,9 @@
             <class name="com.selenium.automated.tests.AlertsTest"/>
         </classes>
     </test>
+    <test name="KeyPressTest">
+        <classes>
+            <class name="com.selenium.automated.tests.KeyPressTest"/>
+        </classes>
+    </test>
 </suite>
