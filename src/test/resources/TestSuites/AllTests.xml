@@ -51,4 +51,9 @@
             <class name="com.selenium.automated.tests.KeyPressTest"/>
         </classes>
     </test>
+    <test name="UploadFileTest">
+        <classes>
+            <class name="com.selenium.automated.tests.UploadFileTest"/>
+        </classes>
+    </test>
 </suite>
