@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 public class UploadFileTest extends BaseTest {
 
   @Test
-  public void uploadFileTest() throws InterruptedException {
+  public void uploadFileTest() {
 
     //open the page
     String url = "https://the-internet.herokuapp.com/upload";
@@ -20,14 +20,11 @@ public class UploadFileTest extends BaseTest {
     //select the file
     String filePath = System.getProperty("user.dir") + "//src//main//resources//files//selenium.png";
     WebElement chooseFileElement = driver.findElement(By.id("file-upload"));
-    Thread.sleep(3000);
     chooseFileElement.sendKeys(filePath);
-    Thread.sleep(3000);
 
     //click upload
     WebElement uploadElement = driver.findElement(By.id("file-submit"));
     uploadElement.click();
-    Thread.sleep(3000);
 
     //verification - page message
     String expectedMessage = "File Uploaded!";
