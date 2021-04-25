@@ -61,4 +61,9 @@
             <class name="com.selenium.automated.tests.HoverOverTest"/>
         </classes>
     </test>
+    <test name="CookieTest">
+        <classes>
+            <class name="com.selenium.automated.tests.CookieTest"/>
+        </classes>
+    </test>
 </suite>
