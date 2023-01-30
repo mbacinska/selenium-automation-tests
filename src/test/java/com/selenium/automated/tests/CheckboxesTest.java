@@ -1,6 +1,6 @@
 package com.selenium.automated.tests;
 
-import com.selenium.automated.base.BaseTest;
+import com.selenium.automation.base.BaseTestTemplate;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class CheckboxesTest extends BaseTest {
+public class CheckboxesTest extends BaseTestTemplate {
 
   @Test
   public void checkboxesTest() {

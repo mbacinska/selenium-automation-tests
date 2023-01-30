@@ -1,15 +1,14 @@
 package com.selenium.automated.tests;
 
-import com.selenium.automated.base.BaseTest;
+import com.selenium.automation.base.BaseTestTemplate;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class KeyPressTest extends BaseTest {
+public class KeyPressTest extends BaseTestTemplate {
 
   @Test
   public void keyPressTest() {

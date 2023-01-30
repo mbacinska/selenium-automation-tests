@@ -1,16 +1,14 @@
 package com.selenium.automated.tests;
 
-import com.selenium.automated.base.BaseTest;
+import com.selenium.automation.base.BaseTestTemplate;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class DynamicElementTest extends BaseTest {
+public class DynamicElementTest extends BaseTestTemplate {
 
   @Test
   public void dynamicElementTest() {

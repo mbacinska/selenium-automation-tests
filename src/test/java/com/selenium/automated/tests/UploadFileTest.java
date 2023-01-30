@@ -1,12 +1,12 @@
 package com.selenium.automated.tests;
 
-import com.selenium.automated.base.BaseTest;
+import com.selenium.automation.base.BaseTestTemplate;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class UploadFileTest extends BaseTest {
+public class UploadFileTest extends BaseTestTemplate {
 
   @Test
   public void uploadFileTest() {

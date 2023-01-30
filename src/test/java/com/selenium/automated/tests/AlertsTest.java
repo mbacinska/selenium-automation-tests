@@ -1,6 +1,6 @@
 package com.selenium.automated.tests;
 
-import com.selenium.automated.base.BaseTest;
+import com.selenium.automation.base.BaseTestTemplate;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -10,7 +10,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class AlertsTest extends BaseTest {
+public class AlertsTest extends BaseTestTemplate {
 
   @BeforeMethod
   public void navigateToPageWithAlerts() {

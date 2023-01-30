@@ -1,13 +1,13 @@
 package com.selenium.automated.tests;
 
-import com.selenium.automated.base.BaseTest;
+import com.selenium.automation.base.BaseTestTemplate;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class HoverOverTest extends BaseTest {
+public class HoverOverTest extends BaseTestTemplate {
 
   @Test
   public void hoverOverTest() {

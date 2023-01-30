@@ -1,13 +1,12 @@
 package com.selenium.automated.tests;
 
-import com.selenium.automated.base.BaseTest;
+import com.selenium.automation.base.BaseTestTemplate;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class DropdownTest extends BaseTest {
+public class DropdownTest extends BaseTestTemplate {
 
   @Test
   public void dropdownTest() {
